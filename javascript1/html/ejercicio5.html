@@ -1,0 +1,72 @@
+<DOCTYPE! html>
+<html>
+    <head>
+        <title>5</title>
+        <link rel="stylesheet" href="../css/myestilo.css"/>
+    </head>
+    </head>
+    <body>
+       <div class="container">
+        <div class="conta">
+            <header>
+               <h1 class="headers">Ejercicio 5: Calculo de impuesto</h1>
+            </header>
+               <label>Ingrese su sueldo:</label>
+               <input type="number" id="sueldo" name="sueldo"/>
+               <br><br>
+               <button onclick="impuesto()">Calcular</button>
+               <br><br>
+               <label>Su sueldo original es: <h3 id="sueldo_neto"></h3></label>
+               <label>Su impuesto calculado es: <h3 id="imp"></h3></label>
+               <label>Su sueldo final es: <h3 id="sueldo_final"></h3></label>
+               <br><br>
+               <h4><a href="../index.html">Volver</a></h4>
+         </div>
+        </div>
+
+       <!-- Inicio de mi javascript -->
+       <script type="text/javascript">
+
+           function impuesto(){
+
+            var sueldo = document.getElementById("sueldo").value;
+            var paga = parseFloat(sueldo);
+
+            if((paga >= 0) && (paga <= 200)){
+
+                var sueldon = paga * 0.05;
+                var sueldoneto = paga + sueldon;
+                alert("aplicas a un descuento del 5%");
+                document.getElementById("sueldo_neto").innerHTML = paga;
+                document.getElementById("imp").innerHTML = sueldon;
+                document.getElementById("sueldo_final").innerHTML = sueldoneto;
+
+                }
+            
+            else if((paga >= 200) && (paga <= 1000)){
+
+                var sueldon = paga * 0.10;
+                var sueldoneto = paga + sueldon;
+                alert("aplicas a un descuento del 10%");
+                document.getElementById("sueldo_neto").innerHTML = paga;
+                document.getElementById("imp").innerHTML = sueldon;
+                document.getElementById("sueldo_final").innerHTML = sueldoneto;
+
+                    } 
+                
+            else if((paga >= 1000) && (paga <= 6000)){
+
+                var sueldon = paga * 0.15;
+                var sueldoneto = paga + sueldon;
+                alert("aplicas a un descuento del 15%");
+                document.getElementById("sueldo_neto").innerHTML = paga;
+                document.getElementById("imp").innerHTML = sueldon;
+                document.getElementById("sueldo_final").innerHTML = sueldoneto;
+
+                }
+
+
+                    }        
+       </script>
+    </body>
+</html>

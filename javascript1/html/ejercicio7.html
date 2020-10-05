@@ -1,0 +1,43 @@
+<DOCTYPE! html>
+<html>
+    <head>
+        <title>7</title>
+        <link rel="stylesheet" href="../css/myestilo.css"/>
+    </head>
+    </head>
+    <body>
+       <div class="container">
+        <div class="conta">
+            <header>
+                <h1 class="headers">Ejercicio 7: Calculo de Salario total de x empleados</h1>
+            </header>
+               <label>Ingrese el total por empleados:</label>
+               <input type="number" id="num1" name="num1" required/>
+               <br><br>
+               <button onclick="calcular()">Calcular</button>
+               <br><br>
+               <label> Total a pagar: </label>
+               <h3 id="total">$</h3>
+               <br><br>
+               <h4><a href="../index.html">Volver</a></h4>
+         </div>
+       </div>
+
+       <!-- Inicio de mi javascript -->
+       <script type="text/javascript">
+
+           function calcular(){
+
+            var numero1 = document.getElementById("num1").value;
+            var num1 = parseInt(numero1);
+            const diashabiles = 20;
+            const diasfinde = 16;
+            var totaldias = diashabiles + diasfinde;
+            var promedio = num1 * totaldias;
+
+            document.getElementById("total").innerHTML = promedio;
+
+                    }        
+       </script>
+    </body>
+</html>

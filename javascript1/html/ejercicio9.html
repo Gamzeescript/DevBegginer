@@ -1,0 +1,52 @@
+<DOCTYPE! html>
+<html>
+    <head>
+        <title>9</title>
+         <link rel="stylesheet" href="../css/myestilo.css"/>
+    </head>
+    </head>
+    <body>
+       <div class="container">
+           <div class="conta">
+               <header>
+                <h1 class="headers">Ejercicio 9: Suma de digitos</h1>
+               </header>
+                 
+               <label>Ingrese el n&uacute;mero:</label>
+               <input type="number" id="num1" name="num1"/>
+               <br><br>
+               <button onclick="sumita()">Sumar</button>
+               <br><br>
+               <label> El n&uacute;mero es: </label>
+               <h3 id="numerito"></h3>
+               <br><br>
+               <label> La suma de sus digitos es: </label>
+               <h3 id="digito"></h3>
+               <br><br>
+               <h4><a href="../index.html">Volver</a></h4>
+            </div>
+       </div>
+
+       <!-- Inicio de mi javascript -->
+       <script type="text/javascript">
+
+           function sumita(){
+
+            var numero1 = document.getElementById("num1").value;
+            var num1 = parseInt(numero1);
+
+            var inicio = 0;
+
+            while (num1){
+
+                inicio += num1 % 10;
+                num1 = Math.floor(num1 / 10);
+
+            }
+            document.getElementById("numerito").innerHTML = numero1;
+            document.getElementById("digito").innerHTML = inicio;
+
+           }      
+       </script>
+    </body>
+</html>

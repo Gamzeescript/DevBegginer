@@ -1,0 +1,35 @@
+body {
+
+    background-color: #FFD700;
+
+}
+
+.container {
+
+    /* display: flex; */
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+}
+
+.conta {
+
+    
+    text-align: center;
+    align-items: center;
+    padding-top: 200px;
+}
+
+.headers {
+
+    text-align: center;
+
+}
+
+a:link, a:visited{
+
+    color: brown;
+    text-decoration: none;
+    cursor: pointer;
+
+}

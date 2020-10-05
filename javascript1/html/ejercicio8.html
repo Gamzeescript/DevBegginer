@@ -1,0 +1,74 @@
+<DOCTYPE! html>
+<html>
+    <head>
+        <title>8</title>
+        <link rel="stylesheet" href="../css/myestilo.css"/>
+    </head>
+    </head>
+    <body>
+       <div class="container">
+           <div class="conta">
+               <header>
+                    <h1 class="headers">Ejercicio 8: N&uacute;meros dobles y triples</h1>
+               </header>
+           <label>Ingrese N&uacute;mero 1:</label>
+           <input type="number" id="num1" name="num1"/>
+           <br><br>
+           <label>Ingrese N&uacute;mero 2:</label>
+           <input type="number" id="num2" name="num2"/>
+           <br><br>
+           <label>Ingrese N&uacute;mero 3:</label>
+           <input type="number" id="num3" name="num3"/>
+           <br><br>
+           <button onclick="numeros()">Corroborar</button>
+           <br><br>
+           <label> Resultado: </label>
+           <h3 id="dtri"></h3>
+           <br><br>
+           <h4><a href="../index.html">Volver</a></h4>
+    </div>
+
+   </div>
+
+   <!-- Inicio de mi javascript -->
+   <script type="text/javascript">
+
+       function numeros(){
+
+        var numero1 = document.getElementById("num1").value;
+        var num1 = parseInt(numero1);
+        var numero2 = document.getElementById("num2").value;  
+        var num2 = parseInt(numero2);
+        var numero3 = document.getElementById("num3").value;  
+        var num3 = parseInt(numero3);
+        var numdoble = 2 * num1;
+        var numtriple = 3 * num2;
+
+        if(numdoble == num2){
+
+            if(numtriple == num3){
+
+                document.getElementById("dtri").innerHTML = "si cumple la condicion";
+
+
+            }
+            
+            else {
+
+                document.getElementById("dtri").innerHTML = "no cumple la condicion";
+
+            }
+
+
+            }    
+
+            else {
+
+                document.getElementById("dtri").innerHTML = "no cumple la condicion";
+
+
+            }
+       }    
+   </script>
+</body>
+</html>

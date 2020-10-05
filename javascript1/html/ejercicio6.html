@@ -1,0 +1,101 @@
+<DOCTYPE! html>
+<html>
+    <head>
+        <title>6</title>
+        <link rel="stylesheet" href="../css/myestilo.css"/>
+    </head>
+    </head>
+    <body>
+       <div class="container">
+        <div class="conta">
+            <header>
+                <h1 class="headers">Ejercicio 6: Asignaci&oacute;n de sueldo por d&iacute;a</h1>
+            </header>
+               <br><br>
+               <label>Escoje un d&iacute;a de la semana:</label>
+               <select id="day" name="day">
+                   <option selected>-- Selecciona una opci&oacute;n --</option>
+                   <option id="lunes" name="lunes" value="lunes">lunes</option>
+                   <option id="martes" name="martes" value="martes">martes</option>
+                   <option id="miercoles" name="miercoles" value="miercoles">miercoles</option>
+                   <option id="jueves" name="jueves" value="jueves">jueves</option>
+                   <option id="viernes" name="viernes" value="viernes">viernes</option>
+                   <option id="sabado" name="sabado" value="sabado">sabado</option>
+                   <option id="domingo" name="domingo" value="domingo">domingo</option>
+               </select>
+               <br><br>
+               <button onclick="escogedia()">Enviar</button>
+               <br><br>
+               <label>Este d&iacute;a se paga: </label>
+               <h3 id="pagodia"></h3>
+               <br><br>
+               <h4><a href="../index.html">Volver</a></h4>
+        </div>
+       </div>
+
+       <!-- Inicio de mi javascript -->
+       <script type="text/javascript">
+
+           function escogedia(){
+
+            var midia = document.getElementById("day").value;
+
+            switch(midia){
+
+                case "lunes":
+
+                document.getElementById("pagodia").innerHTML = "15";
+
+                break;
+
+                case "martes":
+
+                document.getElementById("pagodia").innerHTML = "15";
+
+                break;
+
+                case "miercoles":
+
+                document.getElementById("pagodia").innerHTML = "15";
+
+                break;
+
+                case "jueves":
+
+                document.getElementById("pagodia").innerHTML = "15";
+
+                break;
+
+                case "viernes":
+
+
+                document.getElementById("pagodia").innerHTML = "15";
+
+                break;
+
+                case "sabado":
+
+                document.getElementById("pagodia").innerHTML = "25";
+
+                break;
+
+                case "domingo":
+
+                document.getElementById("pagodia").innerHTML = "25";
+
+                break;
+
+                default:
+
+                alert("losiento, ese dia no existe");
+
+                break;
+
+
+            }
+
+
+           }    
+       </script>
+    </body>
+</html>

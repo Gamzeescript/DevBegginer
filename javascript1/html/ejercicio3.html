@@ -1,0 +1,65 @@
+<DOCTYPE! html>
+<html>
+    <head>
+        <title>3</title>
+        <link rel="stylesheet" href="../css/myestilo.css"/>
+    </head>
+    <body>
+       <div class="container">
+        <div class="conta">
+            <header>
+                <h1 class="headers">Ejercicio 3 - Tipos de triangulo</h1>
+            </header>
+               <label>Ingrese lado 1:</label>
+               <input type="number" id="num1" name="num1"/>
+               <br><br>
+               <label>Ingrese lado 2:</label>
+               <input type="number" id="num2" name="num2"/>
+               <br><br>
+               <label>Ingrese lado 3:</label>
+               <input type="number" id="num3" name="num3"/>
+               <br><br>
+               <button onclick="tre()">Calcular</button>
+               <br><br>
+               <label> El triangulo es: </label>
+               <h3 id="tri"></h3>
+               <br><br>
+               <h4><a href="../index.html">Volver</a></h4>
+        </div>
+       </div>
+
+       <!-- Inicio de mi javascript -->
+       <script type="text/javascript">
+
+           function tre(){
+
+            var numero1 = document.getElementById("num1").value;
+            var num1 = parseFloat(numero1);
+            var numero2 = document.getElementById("num2").value;  
+            var num2 = parseFloat(numero2);
+            var numero3 = document.getElementById("num3").value;  
+            var num3 = parseFloat(numero3);
+
+            if((num1 == num2) && (num2 == num3)){
+
+                document.getElementById("tri").innerHTML = "equilatero";
+
+                }
+            
+                else if((num1 == num2) || (num2 == num3) || (num1 == num3)){
+
+                document.getElementById("tri").innerHTML = "isoceles";
+
+                    } 
+                
+                else if((num1 != num2) && (num2 != num3)){
+
+                document.getElementById("tri").innerHTML = "escaleno";
+
+                }
+
+
+                    }        
+       </script>
+    </body>
+</html>
