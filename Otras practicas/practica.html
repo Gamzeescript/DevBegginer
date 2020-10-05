@@ -1,0 +1,71 @@
+<DOCTYPE! html>
+    <html>
+        <head>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        </head>
+        <body>
+            <p id="prueba">este es un p de prueba porque necesito practicar</p>
+            <button type="button" onclick='document.getElementById("prueba").innerHTML = "esto no lleva puntos y comas, lloro"'>click me</button>
+            <h1 id="pdr">A mi no me obliguen a usar JQUERY! por la chucha con esa mmguebada</h1>
+            <button type="button" onclick='document.getElementById("pdr").style.cssText="font-size: 100px; font-style: italic; color:#7CFC00;"'>aqui para el AAAAAANNGST</button>
+            <br><br><br><br><br>
+            <!-- aqui para poner un fantasmita -->
+            <button type="button" onclick='document.getElementById("aparece").style.display="block"'>buuuu</button>
+            <br><br>
+            <div style="display:inline-flex">
+            <i class="fas fa-ghost" id='aparece' style="display:none"></i>
+            <i class="fas fa-ghost" id='desaparece' style="display:block; color:#B0C4DE;"></i>
+            </div>
+            <br><br>
+            <button type="button" onclick='document.getElementById("desaparece").style.display="none"'>bai</button>
+            <br><br>
+            <button type="button" onclick='confirmoejemplo()' style="size: 50px;">;</button>
+            <br><br>
+            <button type="button" onclick='inserto()'>leemos tu suerte, pucha aqui</button>
+            <br><br>
+            <p id="suerte"></p>
+            <br><br>
+            <input type="number" id="f" onfocus="changeColor()" onblur="cambiofoc()"/>
+            <br>
+            <button type="button" onclick='temperatura()'>le medimos su temperatura</button>
+            <p id="tem"></p>
+            <button type="button" onchange='document.getElementById("hli").innerHTML = "bai"'>cambia</button>
+            <p id="hli">hola</p>
+            <script language="javascript">
+                /* alert("a mi no me mentis, bocachancla") */
+                function confirmoejemplo(){
+                    confirm("el era el ; de mi algoritmo, pero el no sabia como usar los punto y coma >:C")
+                }
+
+                function inserto(){
+                   var miNombre = prompt("inserta tu nombre de la suerte", "Pedrux")
+                   if (miNombre != null){
+                       document.getElementById("suerte").innerHTML = "Hola, " + miNombre + " " + " se que lo estas haciendo bien, no te rindas!";
+
+                   }
+
+                }
+                  
+                function temperatura(){  
+                    var f = document.getElementById("f").value;               
+                   var t = (5/9) * (f-32);
+                       document.getElementById("tem").innerHTML = "tu temperatura es " + t + " ";
+                 
+
+                }
+
+                
+                function changeColor(){
+                    document.getElementById("f").style.cssText = "color: Hotpink; height: 34px; background-color: sienna";
+                }
+
+
+                function cambiofoc(){
+                    document.getElementById("f").style.cssText = "background-color: hotpink";
+                }
+                
+                
+            </script>    
+        </body>    
+    </html>
