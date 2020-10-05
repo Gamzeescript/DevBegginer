@@ -1,0 +1,77 @@
+.fondo{
+
+    background-color: #695EFF;
+}
+
+.mimenu {
+
+    padding: 0;
+
+}
+
+.mimenu li {
+
+    display: inline;
+}
+
+
+.mimenu li a {
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 11px;
+    text-decoration: none;
+    float: left;
+    padding: 10px;
+    width: 230px;
+    background-color: #FF695E;
+    color: #fff;
+
+}
+
+.mimenu li a:hover{
+
+    background-color: #FF695E;
+    margin-top: -2;
+    padding-bottom: 12px;
+    
+}
+
+
+/* reglas de estilo de las tareas*/
+
+.centrado4 {
+
+    text-align: center;
+
+}
+
+.centradobjeto {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.centrolista {
+
+    margin-left: 600px;
+
+}
+
+.centradolista4 > ul {
+
+    display: table;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.centradolista2 > ol {
+
+    display: table;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+
+}
