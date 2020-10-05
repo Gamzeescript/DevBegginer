@@ -1,0 +1,55 @@
+.backy {
+
+    background-color: #695EFF;
+
+}
+
+.headers {
+
+    background-color: #FF695E;
+    text-align: center;
+
+}
+
+.container{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > div {
+    background-color: #5EFF69;
+    width: 100%;
+    min-height: 600px;
+    margin: 3px;
+  }
+
+.minih {
+
+    text-align: center;
+    align-items: center;
+    padding-top: 200px;
+}
+
+a:link, a:visited{
+
+    color: brown;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.imagen {
+
+    width: 100px;
+    height: 100px;
+
+}
+
+.hletra {
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}

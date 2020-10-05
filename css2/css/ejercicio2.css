@@ -1,0 +1,56 @@
+.backy {
+
+    background-color: #c4c3d3;
+
+}
+
+.headers {
+
+    background-color: #FF695E;
+    text-align: center;
+
+}
+
+.headers2 {
+
+    text-align: center;
+
+}
+
+.container{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > div {
+    background-color: #FFFFFF;
+    width: 100%;
+    min-height: 680px;
+    margin: 3px;
+  }
+
+  thead, tbody, th, td, tr {
+
+    border: 1px solid black;
+    border-color:Mediumseagreen;
+    padding:10px 40px;
+
+
+  }
+
+.relleno {
+
+    background-color: Chocolate;
+
+}
+
+a:link, a:visited{
+
+    color: brown;
+    text-decoration: none;
+    cursor: pointer;
+
+}

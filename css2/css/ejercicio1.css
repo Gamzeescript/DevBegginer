@@ -1,0 +1,68 @@
+.backy {
+
+    background-color: #695EFF;
+
+}
+
+.headers {
+
+    background-color: #FF695E;
+    text-align: center;
+
+}
+
+.headers2 {
+
+    background-color: #FFFFFF;
+    text-align: center;
+
+}
+
+.container{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > div {
+    background-color: #FFFFFF;
+    width: 100%;
+    min-height: 680px;
+    margin: 3px;
+  }
+
+  .container > div > div{
+    background-color: #FFFFFF;
+    width: 100%;
+    padding-left: 600px;
+    min-height: 680px;
+    margin: 3px;
+  }
+
+
+  .resizing {
+
+    width:300px;
+    height:300px;
+    border-radius:150px;
+    border:10px solid #666;
+
+
+  }
+
+  .negrita {
+
+    font-weight: bolder;
+
+    
+  }
+
+  a:link, a:visited{
+
+    color: brown;
+    text-decoration: none;
+    cursor: pointer;
+
+}
